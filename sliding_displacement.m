@@ -14,7 +14,7 @@ function [displacement]= sliding_displacement(THETA_S,THETA,a,basal_displacement
     end
     
         for j=1:N_SW 
-        t2_f=TETA_S(j,1);%Angle of the current segment of the filament at the next timestep
+        t2_f=THETA_S(j,1);%Angle of the current segment of the filament at the next timestep
         new_displacement(j)=basal_displacement+d*(t2_f-t2_j);%30x1 vector
  
     displacement = [new_displacement,current_displacement];
