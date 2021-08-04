@@ -6,5 +6,5 @@ displacement= sliding_displacement(THETA_S,THETA,a,basal_displacement,N_SW);
 
 for i=1:t 
  rate_of_sliding(i)=((displacement(i,1)-displacement(i,2))./dt;
- F_a(i)=alpha*displacement(i,1)+beta*(rate_of_sliding(i));
+ F_a(i)=alpha.*displacement(i,1)+beta.*((rate_of_sliding(i));
 end 
